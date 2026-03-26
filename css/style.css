@@ -267,6 +267,16 @@ table img {
   }
 }
 
+@media (max-width: 420px) {
+   main {
+    padding-top: 4rem;
+   }
+
+   h1 {
+    margin-bottom: 2rem;
+   }
+}
+
 @media (min-width: 900px) {
   .arvore-links div {
     width: 60%;
