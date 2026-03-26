@@ -26,6 +26,10 @@ main {
   background-color: rgba(0, 0, 0, 0.3);
   z-index: 0;
   height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   .video-fundo {
     width: 100%;
@@ -36,6 +40,10 @@ main {
     top: 0;
     left: 0;
   }
+}
+
+.container {
+  width: 100%;
 }
 
 .foto-perfil {
@@ -80,7 +88,7 @@ h1 span::after {
 }
 
 h1 img {
-  max-width: 50px; 
+  max-width: 50px;
   height: auto;
 }
 
@@ -204,14 +212,17 @@ table img {
   background: #555;
 }
 
-@media (max-width: 760px) {
-  main {
-    padding-top: 1.5rem;
+@media (min-width: 900px) {
+  .arvore-links div {
+    width: 60%;
   }
+}
+
+@media (max-width: 760px) {
   .arvore-links {
     width: 100%;
   }
-  
+
   .arvore-links div {
     width: 80%;
   }
@@ -219,44 +230,13 @@ table img {
     width: 100%;
     overflow-x: auto;
   }
-  
-  .secao-tabela {
-    background-position: center;
-  }
-  
-  table {
-    min-width: 600px; 
-    width: 100%;
-  }
-}
 
-@media (max-width: 390px) {
-  main {
-    padding-top: 3rem;
-  }
-  .arvore-links {
-    width: 100%;
-  }
-  
-  .arvore-links div {
-    width: 90%;
-  }
-  
-  .arvore-links div a {
-    font-size: 15px;
-  }
-  
-  .tabela-container {
-    width: 100%;
-    overflow-x: auto;
-  }
-  
   .secao-tabela {
     background-position: center;
   }
-  
+
   table {
-    min-width: 600px; 
+    min-width: 600px;
     width: 100%;
   }
 }
@@ -267,18 +247,30 @@ table img {
   }
 }
 
-@media (max-width: 420px) {
-   main {
-    padding-top: 4rem;
-   }
+@media (max-width: 390px) {
+  .arvore-links {
+    width: 100%;
+  }
 
-   h1 {
-    margin-bottom: 2rem;
-   }
-}
-
-@media (min-width: 900px) {
   .arvore-links div {
-    width: 60%;
+    width: 90%;
+  }
+
+  .arvore-links div a {
+    font-size: 15px;
+  }
+
+  .tabela-container {
+    width: 100%;
+    overflow-x: auto;
+  }
+
+  .secao-tabela {
+    background-position: center;
+  }
+
+  table {
+    min-width: 600px;
+    width: 100%;
   }
 }
